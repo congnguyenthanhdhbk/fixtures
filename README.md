@@ -26,6 +26,7 @@ After launching successfully application. Please access to link
 http://localhost:3000/api
 ```
 you will see the UI as figure 2
+![](/images/swagger.png)
 # How to run application
 ## Prepare environment
 1. Install docker: the first, docker will be installed

@@ -88,6 +88,12 @@ export class FixturesController {
           totalPage: Math.floor(counts / limit),
         },
       };
-    } catch (e) {}
+    } catch (e) {
+      this.logger.error(`[filterByCondition] - err: ${JSON.stringify(e)}`);
+      return <HttpDto>{
+        code: HttpStatus.BAD_REQUEST,
+        message: 'from date is required',
+      };
+    }
   }
 }
