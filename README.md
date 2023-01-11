@@ -42,6 +42,14 @@ docker run --name mysql -e MYSQL_ROOT_PASSWORD=fixtures -d mysql
 docker build -t fixtures:1.0 . // Build docker image
 docker run --name fixtures -p 3000:3000 -d fitures:1.0
 ```
+Notes: environment to connect mysql as below
+```
+MYSQL_HOST=localhost
+MYSQL_PORT=3306
+MYSQL_USERNAME=root
+MYSQL_PASSWORD=fixtures
+MYSQL_DATABASE=fixtures
+```
 # Seed data
 before running application. Please run API
 ```
